@@ -1,0 +1,34 @@
+main {
+    background-color: #FFFEFE;
+    font-family: Open Sans, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333333;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    color: #666666;
+}
+
+input {
+    background-color: #F5F5F5;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #999999;
+}
+
+button {
+    background-color: #089FE0;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+label {
+    color: #666666;
+    font-weight: 14px;
+}
