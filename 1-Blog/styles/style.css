@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body a {
+    color: #fff;
+}
+
+.letterB {
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 600;
+    line-height: 23px;
+    background-color: #4B5563;
+}
+
+nav > a {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+nav a {
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.headerSearch input {
+    background-color: #1F293799;
+    line-height: 19px;
+}
+
+.postPartAndDate {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(173, 177, 182);
+}
+
+.postAuthor {
+    line-height: 28px;
+}
+
+.occupation {
+    font-size: 14px;
+    color: rgb(173, 177, 182);
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.postBody {
+    line-height: 32px;
+}
+
+.firstPart {
+    font-size: 20px;
+}
+
+footer p {
+    color: rgb(173, 177, 182);
+    line-height: 28px;
+}
