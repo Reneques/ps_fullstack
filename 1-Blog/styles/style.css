@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    margin: 80px 180px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0px 0px 30px 0px;
+}
+
+body a {
+    color: #fff;
+}
+
+ul {
+    padding: 0;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+  }
+
+nav > a {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+nav a {
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.homePageButton {
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 600;
+    line-height: 23px;
+    background-color: #4B5563;
+    padding: 6px 12px;
+    margin-right: 10px;
+}
+
+.headerSearch input {
+    background-color: #1F293799;
+    line-height: 19px;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 0px 10px 50px;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.postPartAndDate {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(173, 177, 182);
+    margin-bottom: 15px;
+}
+
+.dotPart {
+    width: 2px;
+    border: solid 2px;
+    border-radius: 100%;
+    box-sizing:border-box;
+    margin: 0px 12px;
+}
+
+.postAuthor {
+    margin-bottom: 30px;
+}
+
+.occupation {
+    font-size: 14px;
+    color: rgb(173, 177, 182);
+}
+
+.postBody {
+    line-height: 32px;
+}
+
+.postBody > p {
+    margin: 0px 0px 30px 0px;
+}
+
+.postBody > img {
+    margin-bottom: 70px;
+}
+
+.firstPart {
+    font-size: 20px;
+}
+
+footer p {
+    margin: 80px 0px;
+    color: rgb(173, 177, 182);
+    line-height: 28px;
+}
