@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-    <link rel="stylesheet" href="style/2-Form.css">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style/2-Form.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+    </style>
   </head>
   <body>
     <main>
-      <section>
-        <h1>Регистрация</h1>
-        <p>Уже есть аккаунт? <a href="#">Войти</a></p>
-      </section>
-      <section>
-        <form action="#">
-          <div id="org_input">
-            <input name="org" type="text" placeholder="Мой компания" required />
+      <form class="mainContainer" action="#">
+        <div class="container">
+          <div class="containerItem heroText">
+            <h1>Регистрация</h1>
+            <p class="loginOffer">Уже есть аккаунт? <a href="#">Войти</a></p>
           </div>
-          <div>
+
+          <input
+            class="containerItem myCompany"
+            name="org"
+            type="text"
+            placeholder="Моя компания"
+            required
+          />
+          <div class="containerItem myName">
             <input name="firstname" type="text" placeholder="Имя" required />
             <input name="subname" type="text" placeholder="Фамилия" required />
           </div>
-          <div>
+
+          <input
+            class="containerItem myEmail"
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+          />
+
+          <button class="containerItem heroButton" type="submit">
+            <p class="buttonText">Зарегистрироваться</p>
+            <img class="buttonArrow" src="images/Arrow 1.png" alt="->" />
+          </button>
+          <div class="containerItem termOfUse">
             <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
+              class="termsCheck"
+              type="checkbox"
+              name="accept"
+              id="accept"
               required
             />
-          </div>
-          <div>
-            <button type="submit">Зарегистрироваться</button>
-          </div>
-          <div>
-            <input type="checkbox" name="accept" id="accept" required />
             <label for="accept">
-                Я прочитал и принимаю <a href="#">Условия использования</a>
+              Я прочитал и принимаю <a href="#">Условия использования</a>
             </label>
           </div>
-        </form>
-      </section>
+        </div>
+      </form>
     </main>
   </body>
 </html>
