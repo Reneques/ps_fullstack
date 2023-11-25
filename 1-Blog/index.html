@@ -1,78 +1,90 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мой Блог</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"><span class="homePageButton">В</span> Мой блог</a>
-        <ul>
+        <ul class="headerNavContainer">
+          <li class="homeLink">
+            <a href="#" class="homeLinkContainer">
+              <p id="homeLinkButton">В</p>
+              <p>Мой блог</p>
+            </a>
+          </li>
           <li><a href="#">HTML и CSS</a></li>
           <li><a href="#">Frontend</a></li>
           <li><a href="#">Backend</a></li>
+          <li class="searchPanel">
+            <form action="#">
+              <img class="searchIcon" src="images/search.png" alt="" />
+              <input type="search" placeholder="Поиск" />
+            </form>
+          </li>
         </ul>
       </nav>
-
-      <div class="headerSearch">
-        <form action="#" name="search">
-          <input name="search" type="text" placeholder="Поиск" />
-        </form>
-      </div>
     </header>
 
     <main>
-      <section>
-        <div class="postPartAndDate">
-          <ul>
-            <li>FRONTEND</li>
-            <li><hr class="dotPart" /></li>
-            <li><time datetime="2024-05-12 00:00">12 мая 2024</time></li>
-          </ul>
+      <section class="topicInfo">
+        <div class="postPartitionContainer">
+          <p class="postPartitionItem">FRONTEND</p>
+          <hr class="postPartitionItem pipePartition" />
+          <p class="postPartitionItem">12 мая 2024</p>
         </div>
-
         <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
-
-        <div class="postAuthor">
-          <img src="images/Ellipse 1.png" alt="Аватар Натальи Васильевой" />
-          <ul>
-            <li>Наталья Васильева</li>
-            <li><span class="occupation">Разработчик</span></li>
-          </ul>
+        <div class="authorInfo">
+          <img
+            class="authorAvatar"
+            src="images/author.png"
+            alt="Аватар Наталья Васильева"
+          />
+          <p class="authorName">Наталья Васильева</p>
+          <p class="authorOccupation">Разработчик</p>
         </div>
       </section>
-
-      <section class="postBody">
-        <img src="images/Rectangle 181.png" alt="Цветовая гамма iMac" />
-
-        <div class="firstPart">
-          <p>
-            Теория цвета — это особенности эмоционального восприятия человеком
-            тех или иных цветовых решений. Цвета и различные их комбинации
-            влияют на психику человека, а значит, во многом определяют его
-            поведение. Маркетологи и веб-дизайнеры хорошо знают, что правильно
-            подобранная цветовая гамма сайта помогает привлечь и удержать
-            внимание пользователей, сформировать положительное отношение к
-            продукту, подтолкнуть посетителей к совершению целевых действий,
-            повысить конверсию.
-          </p>
-        </div>
-        <p>
+      <section>
+        <img
+          class="heroImage"
+          src="images/heropic.png"
+          alt="Персональный компьютер и цвета заставки"
+        />
+      </section>
+      <section class="postData">
+        <p class="textPartOne">
+          Теория цвета — это особенности эмоционального восприятия человеком тех
+          или иных цветовых решений. Цвета и различные их комбинации влияют на
+          психику человека, а значит, во многом определяют его поведение.
+          Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная
+          цветовая гамма сайта помогает привлечь и удержать внимание
+          пользователей, сформировать положительное отношение к продукту,
+          подтолкнуть посетителей к совершению целевых действий, повысить
+          конверсию.
+        </p>
+        <p class="textPartTwo">
           Универсального ответа на вопрос, как тот или иной цвет влияет на
           разных людей, нет. Эмоциональная и поведенческая реакция каждого
           человека зависит от личного опыта. Вместе с тем можно выделить
           определенные закономерности влияния цветов на поведение пользователей.
         </p>
-        <p>
-          В исследовании «Влияние цвета на маркетинг»(
-          <a
-            href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing"
-          >
-            Impact of color on marketing
-          </a>
+        <p class="textPartThree">
+          В исследовании «Влияние цвета на маркетинг» (<span>
+            <a
+              class="textLink"
+              href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing"
+              >Impact of color on marketing
+            </a>
+          </span>
           ) говорится, что использование разных цветов может существенно влиять
           на настроение и поведение потребителей. Утверждается, что от 60 до 90%
           покупателей (в зависимости от категории продукта) дают положительную
@@ -80,10 +92,9 @@
         </p>
       </section>
     </main>
+
     <footer>
-      <p>
-        Все права защищены &copy; <time datetime="2024-01-01 00:00">2024</time>
-      </p>
+      <p>Все права защищены (c) 2024</p>
     </footer>
   </body>
 </html>
