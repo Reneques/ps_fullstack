@@ -1,34 +1,132 @@
-main {
-    background-color: #FFFEFE;
-    font-family: Open Sans, sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  margin: 0px;
+}
+
+body {
+  background: linear-gradient(70deg, #f39494, #fdc5c5);
 }
 
 h1 {
-    font-size: 36px;
-    color: #333333;
-    font-weight: 700;
-}
-
-p {
-    font-size: 18px;
-    color: #666666;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  color: #333333;
 }
 
 input {
-    background-color: #F5F5F5;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    color: #999999;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  text-align: left;
 }
 
-button {
-    background-color: #089FE0;
-    font-size: 18px;
-    color: #FFFFFF;
+input::placeholder {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-label {
-    color: #666666;
-    font-weight: 14px;
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  background-color: #fffefe;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto 0px;
+  padding: 72px 95px;
+  gap: 22px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.containerItem {
+  flex-basis: 44px;
+}
+
+.loginOffer {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: #666666;
+}
+
+.loginOffer > a {
+  color: #089fe0;
+}
+
+.termOfUse {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666666;
+}
+
+.termOfUse a {
+  color: #089fe0;
+}
+
+.myCompany {
+  border: 1px solid #f5f5f5;
+  background-color: #fffefe;
+}
+
+.myCompany::placeholder {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-style: normal;
+  color: #333333;
+}
+
+.myName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myName input {
+  flex: 1;
+  gap: 1px 0px;
+}
+
+.heroButton {
+  background-color: #089fe0;
+  border: none;
+  padding: 0px 10px 0px 34px;
+  border-radius: 5px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.buttonText {
+  flex: 5;
 }
