@@ -1,0 +1,56 @@
+:root {
+  /* Colors */
+  --color-bg: #fff;
+  --color-bg-alt: #357efe;
+  --color-text: #000;
+  --color-text-light: rgba(78, 93, 124, 0.5);
+  --color-text-alt: #fff;
+  --color-text-light-alt: rgba(255, 255, 255, 0.6);
+  --color-text-prices: #4e5d7c;
+  --color-profit: #1abc9c;
+  --color-profit-price: #ffc736;
+  --color-line: rgba(78, 93, 124, 0.08);
+  --color-line-alt: rgba(255, 255, 255, 0.16);
+
+  /* Fonts */
+  --font-family: Inter;
+  --font-weight-tiny: 500;
+  --font-weight-normal: 600;
+  --font-weight-bold: 800;
+  --font-size-h1: 48px;
+  --font-size-h2: 32px;
+  --font-size-main: 17px;
+  --font-size-tiny: 15px;
+
+  /* Borders */
+  --box-shadow: 0px 0px 32px rgba(78, 93, 124, 0.16);
+  --box-border-radius: 7px;
+  --button-border-raduius: 47px;
+  --profit-border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-bg);
+  font-family: var(--font-family, sans-serif);
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-main);
+  margin: 0px;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}

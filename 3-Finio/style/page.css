@@ -1,0 +1,128 @@
+.section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 120px;
+
+  display: grid;
+  gap: 40px 24px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "tariff-header tariff-header tariff-header"
+    "tariff-1m tariff-6m tariff-12m ";
+}
+
+.section__description {
+  color: var(--color-text-light);
+  font-weight: var(--font-weight-tiny);
+}
+
+.section__hero {
+  grid-area: tariff-header;
+  text-align: center;
+}
+
+.section__hero-header {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-normal);
+}
+
+.section__card-1m {
+  grid-area: tariff-1m;
+}
+
+.section__card-6m {
+  grid-area: tariff-6m;
+}
+
+.section__card-12m {
+  grid-area: tariff-12m;
+}
+
+.section__card {
+  display: grid;
+  justify-items: start;
+  /* gap: 16px 0px; */
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: repeat(10, auto);
+}
+
+.section__profit-percent {
+  min-height: 29px;
+  align-self: center;
+  display: inline-block;
+  padding: 4px 16px;
+  color: var(--color-text-alt);
+  font-size: var(--font-size-tiny);
+  background-color: var(--color-profit);
+  border-radius: var(--profit-border-radius);
+  grid-column: span 2;
+}
+
+.section__card-header {
+  grid-column: span 2;
+  margin: 16px 0px;
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+}
+
+.section__card-description {
+  min-height: 72px;
+  grid-column: span 2;
+}
+
+.section__prices {
+  font-weight: var(--font-weight-tiny);
+  color: var(--color-text-prices);
+  align-self: center;
+  margin: 8px 0px;
+}
+
+.section__prices-line {
+  width: 100%;
+  grid-column: span 2;
+  border: 1px solid var(--color-line);
+  margin: 8px 0px;
+}
+
+.section__button {
+  margin-top: calc(34px - 8px);
+  grid-column: span 2;
+  justify-self: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .section__profit-percent {
+    min-height: 0px;
+  }
+  .section__card {
+    grid-template-rows: repeat(8, auto);
+  }
+  .section {
+    justify-content: center;
+    grid-template-columns: 560px;
+    grid-template-areas:
+      "tariff-header"
+      "tariff-1m"
+      "tariff-6m"
+      "tariff-12m";
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .section {
+    padding: 48px 24px 64px 24px;
+    justify-content: center;
+    gap: 24px;
+    grid-template-columns: 330px;
+    grid-template-areas:
+      "tariff-header"
+      "tariff-1m"
+      "tariff-6m"
+      "tariff-12m";
+  }
+  .section__hero {
+    text-align: start;
+  }
+}
