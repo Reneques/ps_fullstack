@@ -1,0 +1,106 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 80px 0px 40px 0px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border-footer-line);
+}
+
+.footer__logo-block {
+  max-width: 283px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__about-site {
+  color: var(--text-color-gray-footer);
+}
+
+.footer__nav-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__list-item {
+  color: var(--text-color-gray-footer-dark);
+}
+
+.footer__list-item:hover {
+  color: var(--text-color-main);
+}
+
+.footer__law-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__requisites {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text-color-gray-footer);
+}
+
+.footer__requisites-link {
+  color: var(--text-color-gray-footer-dark);
+}
+
+.footer__requisites-link:hover {
+  color: var(--text-color-main);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  color: var(--text-color-gray-footer);
+  align-items: center;
+}
+
+.footer__bottom__payments-type {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1450px) {
+  .footer {
+    padding: 80px 24px 40px 24px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__top {
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 0px 50px;
+    gap: 48px;
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer {
+    align-items: center;
+    padding: 64px 24px;
+  }
+  .footer__top {
+    flex-direction: column;
+    padding: 0px 0px 48px 0px;
+  }
+  .footer__bottom {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+}
