@@ -1,0 +1,88 @@
+:root {
+  /* COLORS */
+  --bg-color-main: #fff;
+  --bg-color-alt: #357efe;
+  --bg-color-footer: #1a1d25;
+  --bg-color-discount-main: #1abc9c;
+  --bg-color-discount-alt: #ffc736;
+  --text-color-main: #fff;
+  --text-color-alt: #357efe;
+  --text-color-card: #4e5d7c;
+  --text-color-gray: rgba(255, 255, 255, 0.8);
+  --text-color-gray-footer: rgba(255, 255, 255, 0.7);
+  --text-color-gray-footer-dark: rgba(255, 255, 255, 0.7);
+  --text-color-gray-alt: rgba(255, 255, 255, 0.5);
+  --text-color-section-header: #000;
+  --text-color-section-description: rgba(78, 93, 124, 0.5);
+  --text-color-review-button: rgba(78, 93, 124, 0.32);
+  --border-mobile-color: rgba(255, 255, 255, 0.16);
+  --border-laptop-color: rgba(78, 93, 124, 0.08);
+  --border-footer-line: rgba(255, 255, 255, 0.08);
+
+  /* RADIUS */
+  --radius-button-main: 32px;
+  --radius-button-alt: 47px;
+  --radius-block-main: 16px;
+  --radius-block-tiny: 8px;
+
+  /* FONTS */
+  --font-size-logo: 36px;
+  --font-size-main: 18px;
+  --font-size-small: 17px;
+  --font-size-tiny: 15px;
+  --font-size-header-main: 40px;
+  --font-size-header-section: 48px;
+  --font-size-header-tiny: 32px;
+  --font-size-review-header: 28px;
+  --font-size-header-tiny-alt: 24px;
+
+  --font-family: Inter, sans-serif;
+  --font-weight-logo: 900;
+  --font-weight-button: 800;
+  --font-weight-bold-sections: 700;
+  --font-weight-header-section: 600;
+  --font-weight-main: 500;
+}
+
+body {
+  background: var(--bg-color-main);
+  font-family: var(--font-family);
+  font-size: var(--font-size-main);
+  font-style: normal;
+  font-weight: 500;
+  margin: 0px;
+  color: var(--text-color-main);
+}
+
+a {
+  color: var(--text-color-main);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  cursor: pointer;
+  color: var(--text-color-main);
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}

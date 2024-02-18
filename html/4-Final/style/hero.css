@@ -1,0 +1,121 @@
+.hero {
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  z-index: auto;
+}
+
+.skew-block {
+  width: 100%;
+  height: 500px;
+  background-color: var(--bg-color-main);
+  position: absolute;
+  overflow: hidden;
+  top: 650px;
+  transform: skewY(-7deg);
+  z-index: auto;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 515px;
+}
+
+.hero__header {
+  position: relative;
+  font-size: var(--font-size-header-main);
+  font-weight: var(--font-weight-button);
+  margin: 17px -150px 40px 0px;
+}
+
+.hero__button-trial {
+  margin-bottom: 80px;
+}
+
+.hero__mp-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  max-width: 334px;
+  flex-wrap: wrap;
+  gap: 22px 0px;
+}
+.hero__ozon-logo {
+  margin-top: 1px;
+}
+
+.hero__ali-logo {
+  margin-top: 2px;
+}
+
+.hero__image {
+  position: relative;
+  left: 100px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1840px) {
+  .hero__image {
+    max-height: 550px;
+    left: 50px;
+  }
+  .hero__header {
+    margin: 17px -50px 40px 0px;
+  }
+  .skew-block {
+    top: 600px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .hero__image {
+    max-height: 400px;
+    left: 0px;
+  }
+  .hero {
+    padding: 0px 24px 142px 24px;
+  }
+  .hero__header {
+    margin: 32px 0px;
+  }
+  .skew-block {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .hero__image {
+    display: none;
+  }
+  .hero__button-trial {
+    align-self: center;
+  }
+  .hero {
+    justify-content: center;
+  }
+  .hero__header {
+    font-size: var(--font-size-header-tiny);
+  }
+  .hero__button-trial {
+    margin-bottom: 80px;
+  }
+  .hero__button-trial {
+    margin-bottom: 56px;
+  }
+  .hero__mp-logos {
+    gap: 17px 0px;
+  }
+  .skew-block {
+    top: 480px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  .skew-block {
+    top: 550px;
+  }
+}
