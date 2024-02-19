@@ -1,107 +1,172 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
 body {
-    background: linear-gradient(180deg, #374151 0%, #111827 100%);
-    font-family: Roboto, sans-serif;
-    color: #fff;
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0;
+  margin: 0px;
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
 }
 
 header {
-    margin: 80px 180px;
+  margin: 70px 180px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 0px;
 }
 
 h1 {
-    font-size: 24px;
-    margin: 0px 0px 30px 0px;
+  font-size: 24px;
+  line-height: 38px; /* 158.333% */
+  max-width: 525px;
+  margin: 14px 0px 30px 0px;
 }
 
-body a {
-    color: #fff;
+footer {
+  margin: auto;
+  opacity: 0.6;
+  line-height: 28px; /* 175% */
+  margin-bottom: 80px;
 }
 
-ul {
-    padding: 0;
-    margin: 0px;
+.headerNavContainer {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1080px;
+  margin: auto;
 }
 
-li {
-    list-style: none;
-  }
-
-nav > a {
-    font-size: 18px;
-    line-height: 21px;
+.homeLink {
+  margin-right: 77px;
 }
 
-nav a {
-    line-height: 19px;
-    text-decoration: none;
+.searchPanel {
+  margin-left: auto;
 }
 
-.homePageButton {
-    font-family: Source Sans Pro, sans-serif;
-    font-weight: 600;
-    line-height: 23px;
-    background-color: #4B5563;
-    padding: 6px 12px;
-    margin-right: 10px;
+.searchPanel input {
+  border-radius: 100px;
+  border: none;
+  background: rgba(31, 41, 55, 0.6);
+  padding: 10px 0px 10px 50px;
 }
 
-.headerSearch input {
-    background-color: #1F293799;
-    line-height: 19px;
-    border: none;
-    border-radius: 100px;
-    padding: 10px 0px 10px 50px;
-    color: #FFF;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+.searchIcon {
+  position: absolute;
+  padding: 13px 15px;
 }
 
-.postPartAndDate {
-    font-size: 14px;
-    line-height: 16px;
-    color: rgb(173, 177, 182);
-    margin-bottom: 15px;
+.searchPanel input::placeholder {
+  opacity: 0.6;
+  text-align: left;
+  line-height: normal;
 }
 
-.dotPart {
-    width: 2px;
-    border: solid 2px;
-    border-radius: 100%;
-    box-sizing:border-box;
-    margin: 0px 12px;
+.headerNavContainer > li > a {
+  line-height: normal;
+  text-decoration: none;
+  align-items: center;
 }
 
-.postAuthor {
-    margin-bottom: 30px;
+.homeLinkContainer {
+  display: flex;
+  gap: 11px;
 }
 
-.occupation {
-    font-size: 14px;
-    color: rgb(173, 177, 182);
+.topicInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.postBody {
-    line-height: 32px;
+.postPartitionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
-.postBody > p {
-    margin: 0px 0px 30px 0px;
+.postPartitionItem {
+  opacity: 0.6;
+  font-size: 14px;
+  line-height: normal;
+  margin: 0px;
 }
 
-.postBody > img {
-    margin-bottom: 70px;
+.pipePartition {
+  width: 1px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 100px;
 }
 
-.firstPart {
-    font-size: 20px;
+.authorInfo {
+  flex-flow: column wrap;
+  display: flex;
+  height: 60px;
+  margin-bottom: 30px;
 }
 
-footer p {
-    margin: 80px 0px;
-    color: rgb(173, 177, 182);
-    line-height: 28px;
+.authorName {
+  text-align: left;
+  line-height: 28px; /* 175% */
+}
+
+.authorOccupation {
+  opacity: 0.6;
+  font-size: 14px;
+  text-align: left;
+  line-height: 28px; /* 200% */
+}
+
+.authorName,
+.authorOccupation {
+  margin: 0px 0px 0px 15px;
+}
+
+.heroImage {
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+
+.postData {
+  max-width: 710px;
+  margin-bottom: 100px;
+}
+
+.textPartTwo {
+  margin: 40px 0px;
+}
+
+.textPartTwo,
+.textPartThree {
+  text-align: left;
+  line-height: 30px; /* 187.5% */
+}
+
+.textPartOne {
+  text-align: left;
+  font-size: 20px;
+  line-height: 32px; /* 160% */
+}
+
+#homeLinkButton {
+  padding: 6px 12px;
+  border-radius: 3px;
+  background: #4b5563;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
 }
